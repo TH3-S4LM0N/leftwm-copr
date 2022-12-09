@@ -50,7 +50,7 @@ cargo build
 
 
 %install
-cp %{name}.desktop %{buildroot}%{_datadir}/xsessions/
+install -Dm 0644 %{name}.desktop %{buildroot}%{_datadir}/xsessions/
 install -Dm 0644 %{name}/doc/%{name}.1 -t %{buildroot}%{_mandir}/man1/
 
 install -Dm 0755 \
