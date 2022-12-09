@@ -74,6 +74,7 @@ strip --strip-all %{buildroot}%{_bindir}/*
 %{_bindir}/%{name}
 %{_bindir}/%{name}-*
 %{_datadir}/%{name}/
+%{_datadir}/lefthk-worker
 %{_datadir}/xsessions/%{name}.desktop
 %{_mandir}/man1/*.1*
 
