@@ -41,8 +41,8 @@ be a window manager. LeftWM follows the following mantra:
 %dnl export PATH=$HOME/.cargo/bin/
 
 %if %{with release_build}
-%dnl $HOME/.cargo/bin/cargo build --profile optimized
-cargo build --profile optimized
+%dnl $HOME/.cargo/bin/cargo build --release
+cargo build --release
 %else
 %dnl $HOME/.cargo/bin/cargo build
 cargo build
