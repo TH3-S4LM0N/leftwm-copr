@@ -54,12 +54,12 @@ cp %{name}.desktop %{buildroot}%{_datadir}/xsessions/
 install -Dm 0644 %{name}/doc/%{name}.1 -t %{buildroot}%{_mandir}/man1/
 
 install -Dm 0755 \
-    target/optimized/%{name} \
-    target/optimized/%{name}-check \
-    target/optimized/%{name}-command \
-    target/optimized/%{name}-state \
-    target/optimized/%{name}-worker \
-    target/optimized/lefthk-worker \
+    target/release/%{name} \
+    target/release/%{name}-check \
+    target/release/%{name}-command \
+    target/release/%{name}-state \
+    target/release/%{name}-worker \
+    target/release/lefthk-worker \
     -t %{buildroot}%{_bindir}
 
 mkdir -p %{buildroot}%{_datadir}/%{name}
