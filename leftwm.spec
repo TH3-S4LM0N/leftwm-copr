@@ -50,10 +50,10 @@ cargo build
 
 
 %install
-install -Dm 0644 %{name}.desktop %{buildroot}%{_datadir}/xsessions/
-install -Dm 0644 %{name}/doc/%{name}.1 -t %{buildroot}%{_mandir}/man1/
+install -Dpm 0644 %{name}.desktop -t %{buildroot}%{_datadir}/xsessions/
+install -Dpm 0644 %{name}/doc/%{name}.1 -t %{buildroot}%{_mandir}/man1/
 
-install -Dm 0755 \
+install -Dpm 0755 \
     target/release/%{name} \
     target/release/%{name}-check \
     target/release/%{name}-command \
