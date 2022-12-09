@@ -4,7 +4,7 @@
 %global debug_package %{nil}
 
 Name:           leftwm
-Version:        0.4.0
+Version:        0.4.1
 Release:        1%{?dist}
 Summary:        A tiling window manager for Adventurers
 
@@ -80,5 +80,7 @@ strip --strip-all %{buildroot}%{_bindir}/*
 
 
 %changelog
+* Tue Dec 27 2022 TH3 S4LM0N <TH3-S4LM0N@outlook.com> - 0.4.1-1
+- Bump version to 0.4.1
 * Fri Dec 9 2022 TH3 S4LM0N <TH3-S4LM0N@outlook.com> - 0.4.0-1
 - New package
